@@ -1,3 +1,7 @@
+/*
+  @reference
+  https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
+*/
 :root {
   --nav-background: rgba(0, 0, 0, 0.8);
   --light-gray: #86868b;
