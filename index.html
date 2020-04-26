@@ -7,6 +7,7 @@
     <title>Apple Clone</title>
   </head>
   <body>
+    <!-- This header will appear for screen below 768px -->
     <header class="header-mobile">
       <div class="mobile-nav">
         <div class="mobile-nav__toggle">
@@ -49,6 +50,52 @@
         src="./img/shopping-bag.svg"
         alt="shopping bag icon"
       />
+    </header>
+
+    <!-- This header will appear for screen above 768px -->
+    <header class="header-desktop">
+      <div class="header-desktop__inner">
+        <img
+          src="./img/apple-logo/large.svg"
+          alt="apple logo"
+          class="desktop-nav__logo desktop-nav__logo--apple"
+        />
+        <nav class="desktop-nav">
+          <ul class="desktop-nav__list">
+            <li class="desktop-nav__list-item">
+              <a href="#" class="desktop-nav__list-item--link">Mac</a>
+            </li>
+            <li class="desktop-nav__list-item">
+              <a href="#" class="desktop-nav__list-item--link">iPad</a>
+            </li>
+            <li class="desktop-nav__list-item">
+              <a href="#" class="desktop-nav__list-item--link">iPhone</a>
+            </li>
+            <li class="desktop-nav__list-item">
+              <a href="#" class="desktop-nav__list-item--link">Watch</a>
+            </li>
+            <li class="desktop-nav__list-item">
+              <a href="#" class="desktop-nav__list-item--link">TV</a>
+            </li>
+            <li class="desktop-nav__list-item">
+              <a href="#" class="desktop-nav__list-item--link">Music</a>
+            </li>
+            <li class="desktop-nav__list-item">
+              <a href="#" class="desktop-nav__list-item--link">Support</a>
+            </li>
+          </ul>
+        </nav>
+        <img
+          src="./img/search/small.svg"
+          alt="search icon"
+          class="desktop-nav__logo desktop-nav__logo--search"
+        />
+        <img
+          src="./img/shopping-bag.svg"
+          alt="shopping bag icon"
+          class="desktop-nav__logo desktop-nav__logo--shopping-bag"
+        />
+      </div>
     </header>
   </body>
 </html>
