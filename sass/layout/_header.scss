@@ -1,0 +1,41 @@
+.header-mobile {
+  background-color: var(--nav-background);
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0 0.2rem 2rem;
+
+  .mobile-nav {
+    display: flex;
+
+    &__toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+
+      &--icon {
+        background-color: var(--darkbg-text);
+        border-radius: 5px;
+        height: 1px;
+        width: 18px;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    &__container {
+      display: none;
+    }
+
+    &__logo {
+      cursor: pointer;
+
+      &--shopping-bag {
+        align-self: center;
+        display: block;
+        height: 45px;
+        width: 50px;
+      }
+    }
+  }
+}
