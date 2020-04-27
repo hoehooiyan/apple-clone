@@ -39,6 +39,10 @@
       color: var(--lightbg-text);
     }
 
+    &--iphone-11 {
+      padding: 0 2rem;
+    }
+
     @include media('sm') {
       font-size: 4rem;
       margin-bottom: 1rem;
@@ -61,6 +65,10 @@
       color: var(--lightbg-text);
     }
 
+    &--iphone-11 {
+      padding: 0 2rem;
+    }
+
     @include media('sm') {
       font-size: 2.2rem;
       margin-bottom: 1rem;
@@ -75,6 +83,10 @@
     margin-bottom: 1.4rem;
     color: var(--light-gray);
 
+    &--iphone-11 {
+      padding: 0 2rem;
+    }
+
     @include media('sm') {
       font-size: 1.8rem;
       margin-bottom: 1.8rem;
@@ -85,8 +97,20 @@
     max-width: 100%;
     height: auto;
 
-    @include media('sm') {
-      display: none;
+    &--iphone-se {
+      @include media('sm') {
+        display: none;
+      }
+    }
+
+    &--iphone-11 {
+      @include media('sm') {
+        display: none;
+      }
+    }
+
+    &--tvplus-logo {
+      margin-bottom: 1.4rem;
     }
   }
 
@@ -95,6 +119,13 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 200px;
+
+    &__tv-plus {
+      display: block;
+      color: var(--lightbg-text);
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
 
     &__lightbg {
       margin-bottom: 4rem;
@@ -140,6 +171,17 @@
 
     @include media('xxl') {
       height: 600px;
+    }
+  }
+
+  &__tv-plus {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+
+    @include media('xl') {
+      padding-top: 6rem;
     }
   }
 }

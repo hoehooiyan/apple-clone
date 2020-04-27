@@ -217,6 +217,8 @@ ul {
       color: var(--darkbg-text); }
     .hero__title--lightbg {
       color: var(--lightbg-text); }
+    .hero__title--iphone-11 {
+      padding: 0 2rem; }
     @media (min-width: 734px) {
       .hero__title {
         font-size: 4rem;
@@ -231,6 +233,8 @@ ul {
       color: var(--darkbg-text); }
     .hero__subtitle--lightbg {
       color: var(--lightbg-text); }
+    .hero__subtitle--iphone-11 {
+      padding: 0 2rem; }
     @media (min-width: 734px) {
       .hero__subtitle {
         font-size: 2.2rem;
@@ -241,6 +245,8 @@ ul {
   .hero__price {
     margin-bottom: 1.4rem;
     color: var(--light-gray); }
+    .hero__price--iphone-11 {
+      padding: 0 2rem; }
     @media (min-width: 734px) {
       .hero__price {
         font-size: 1.8rem;
@@ -249,13 +255,23 @@ ul {
     max-width: 100%;
     height: auto; }
     @media (min-width: 734px) {
-      .hero__img {
+      .hero__img--iphone-se {
         display: none; } }
+    @media (min-width: 734px) {
+      .hero__img--iphone-11 {
+        display: none; } }
+    .hero__img--tvplus-logo {
+      margin-bottom: 1.4rem; }
   .hero .cta-links {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 200px; }
+    .hero .cta-links__tv-plus {
+      display: block;
+      color: var(--lightbg-text);
+      font-size: 1.8rem;
+      margin-bottom: 2rem; }
     .hero .cta-links__lightbg {
       margin-bottom: 4rem; }
     .hero .cta-links__item--darkbg {
@@ -277,11 +293,21 @@ ul {
         background-position: center 100px;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 650px;
-        width: 100%; } }
+        height: 600px; } }
     @media (min-width: 1024px) {
       .hero__iphone-11 {
         background-image: url("../../img/heroes/iphone-11/largetall.jpg");
         background-size: contain;
         background-position: center 250px;
-        height: 800px; } }
+        height: 500px; } }
+    @media (min-width: 1440px) {
+      .hero__iphone-11 {
+        height: 600px; } }
+  .hero__tv-plus {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem; }
+    @media (min-width: 1280px) {
+      .hero__tv-plus {
+        padding-top: 6rem; } }
