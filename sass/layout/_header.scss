@@ -1,3 +1,8 @@
+.header {
+  position: sticky;
+  top: 0;
+}
+
 .header-mobile {
   background-color: var(--nav-background);
   height: 48px;

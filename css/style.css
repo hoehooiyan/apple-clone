@@ -88,6 +88,10 @@ ul {
   src: local("Roboto Black"), local("Roboto-Black"), url("../../fonts/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), url("../../fonts/roboto-v20-latin-900.woff2") format("woff2"), url("../../fonts/roboto-v20-latin-900.woff") format("woff"), url("../../fonts/roboto-v20-latin-900.ttf") format("truetype"), url("../../fonts/roboto-v20-latin-900.svg#Roboto") format("svg");
   /* Legacy iOS */ }
 
+.header {
+  position: sticky;
+  top: 0; }
+
 .header-mobile {
   background-color: var(--nav-background);
   height: 48px;
