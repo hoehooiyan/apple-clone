@@ -1,14 +1,11 @@
 .hero {
-  background-color: #131313;
-  padding: 4rem 2rem 0 2rem;
   text-align: center;
   margin: 0 auto;
 
-  @include media('lg') {
-    padding-top: 6rem;
-  }
-
   &__iphone-se {
+    background-color: #131313;
+    padding: 4rem 2rem 0 2rem;
+
     @include media('sm') {
       background-image: url('../../img/heroes/iphone-se/mediumtall.jpg');
       background-position: center 80px;
@@ -22,6 +19,7 @@
       background-image: url('../../img/heroes/iphone-se/largetall.jpg');
       background-position: center 100px;
       height: 650px;
+      padding-top: 6rem;
     }
 
     @include media('xl') {
@@ -30,10 +28,15 @@
   }
 
   &__title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+
     &--darkbg {
       color: var(--darkbg-text);
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+    }
+
+    &--lightbg {
+      color: var(--lightbg-text);
     }
 
     @include media('sm') {
@@ -47,10 +50,15 @@
   }
 
   &__subtitle {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+
     &--darkbg {
       color: var(--darkbg-text);
-      font-weight: 400;
-      margin-bottom: 0.5rem;
+    }
+
+    &--lightbg {
+      color: var(--lightbg-text);
     }
 
     @include media('sm') {
@@ -64,10 +72,8 @@
   }
 
   &__price {
-    &--darkbg {
-      color: var(--light-gray);
-      margin-bottom: 1.4rem;
-    }
+    margin-bottom: 1.4rem;
+    color: var(--light-gray);
 
     @include media('sm') {
       font-size: 1.8rem;
@@ -90,8 +96,18 @@
     margin: 0 auto;
     width: 200px;
 
+    &__lightbg {
+      margin-bottom: 4rem;
+    }
+
     &__item {
-      color: var(--darkbg-blue);
+      &--darkbg {
+        color: var(--darkbg-blue);
+      }
+
+      &--lightbg {
+        color: var(--lightbg-blue);
+      }
 
       @include media('sm') {
         font-size: 1.8rem;
@@ -100,6 +116,27 @@
       @include media('lg') {
         font-size: 2rem;
       }
+    }
+  }
+
+  &__iphone-11 {
+    background-color: #fafafa;
+    padding: 4rem 0 0 0;
+
+    @include media('sm') {
+      background-image: url('../../img/heroes/iphone-11/mediumtall.jpg');
+      background-position: center 100px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 650px;
+      width: 100%;
+    }
+
+    @include media('lg') {
+      background-image: url('../../img/heroes/iphone-11/largetall.jpg');
+      background-size: contain;
+      background-position: center 250px;
+      height: 800px;
     }
   }
 }
