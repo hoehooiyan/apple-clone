@@ -1,15 +1,19 @@
 .banner {
-  padding: 1.5rem;
+  padding: 1.5rem 3rem;
   text-align: center;
-
-  @include media('lg') {
-    display: flex;
-    justify-content: center;
-  }
 
   &__text {
     font-size: 1.7rem;
     line-height: 25px;
+
+    @include media('xs') {
+      display: block;
+    }
+
+    @include media('lg') {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__link {
