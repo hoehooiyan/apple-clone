@@ -82,6 +82,7 @@
   &__price {
     margin-bottom: 1.4rem;
     color: var(--light-gray);
+    font-size: 1.4rem;
 
     &--iphone-11 {
       padding: 0 2rem;
@@ -151,7 +152,7 @@
   }
 
   &__iphone-11 {
-    background-color: #fafafa;
+    background-color: var(--lightbg);
     padding: 4rem 0 0 0;
 
     @include media('sm') {
@@ -175,7 +176,7 @@
   }
 
   &__tv-plus {
-    background-color: #fafafa;
+    background-color: var(--lightbg);
     display: flex;
     flex-direction: column;
     padding: 4rem 2rem;

@@ -1,0 +1,153 @@
+.collections {
+  display: grid;
+  // grid-gap: 1rem;
+  // grid-template-columns: repeat(2, minmax(50px, 1fr));
+  grid-template-rows: repeat(6, minmax(min-content, 500px));
+
+  .collection {
+    margin-bottom: 1rem;
+
+    &__iphone-11-pro {
+      background-image: url('../../img/iphone-11-pro/iphone-11-pro-small.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      height: auto;
+      max-width: 100%;
+      padding: 4rem 2rem;
+
+      @include media('sm') {
+        background-image: url('../../img/iphone-11-pro/iphone-11-pro-medium.jpg');
+      }
+    }
+
+    .iphone-11-pro {
+      &__title {
+        color: var(--darkbg-text);
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      &__subtitle {
+        color: var(--darkbg-text);
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+
+      &__price {
+        color: var(--light-gray);
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .cta-links {
+      &__item {
+        color: var(--darkbg-blue);
+      }
+    }
+
+    &__covid-19 {
+      background-color: var(--covid19-bg);
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .covid-19 {
+      &__img {
+        margin-bottom: 2rem;
+      }
+
+      &__title {
+        color: var(--darkbg-text);
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      &__cta {
+        display: flex;
+        flex-direction: column;
+
+        &--link {
+          color: var(--darkbg-text);
+          font-size: 1.8rem;
+
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    &__apple-watch {
+      background-color: var(--lightbg);
+      padding: 4rem 2rem;
+    }
+
+    .apple-watch {
+      &__watch-logo {
+        margin-bottom: 1rem;
+      }
+
+      &__subtitle {
+        color: var(--lightbg-text);
+        font-weight: 400;
+        margin-bottom: 2rem;
+      }
+
+      &__cta {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 200px;
+
+        @include media('lg') {
+          margin-bottom: 4rem;
+        }
+
+        &--link {
+          color: var(--lightbg-blue);
+        }
+      }
+
+      &__img {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+
+    &__mothers-day {
+      background-color: var(--lightbg);
+      background-image: url(../../img/mothers-day/small.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include media('sm') {
+        background-image: url(../../img/mothers-day/medium.jpg);
+        background-size: contain;
+      }
+
+      @include media('lg') {
+        background-image: url(../../img/mothers-day/large.jpg);
+      }
+    }
+
+    .mothers-day {
+      &__title {
+        color: var(--lightbg-text);
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        padding: 4rem 2rem 0;
+      }
+
+      &__cta {
+        color: var(--lightbg-blue);
+      }
+    }
+  }
+}

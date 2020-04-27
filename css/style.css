@@ -4,10 +4,12 @@
 */
 :root {
   --nav-background: rgba(0, 0, 0, 0.8);
+  --lightbg: #fafafa;
   --light-gray: #86868b;
   --light-grey: var(--light-gray);
   --dark-gray: #515154;
   --dark-grey: var(--dark-gray);
+  --covid19-bg: #105eab;
   --darkbg-blue: #2997ff;
   --darkbg-text: #f5f5f7;
   --lightbg-blue: #0066cc;
@@ -93,7 +95,8 @@ ul {
 
 .header {
   position: sticky;
-  top: 0; }
+  top: 0;
+  backdrop-filter: blur(5px); }
 
 .header-mobile {
   background-color: var(--nav-background);
@@ -244,7 +247,8 @@ ul {
         font-size: 2.6rem; } }
   .hero__price {
     margin-bottom: 1.4rem;
-    color: var(--light-gray); }
+    color: var(--light-gray);
+    font-size: 1.4rem; }
     .hero__price--iphone-11 {
       padding: 0 2rem; }
     @media (min-width: 734px) {
@@ -285,7 +289,7 @@ ul {
       .hero .cta-links__item {
         font-size: 2rem; } }
   .hero__iphone-11 {
-    background-color: #fafafa;
+    background-color: var(--lightbg);
     padding: 4rem 0 0 0; }
     @media (min-width: 734px) {
       .hero__iphone-11 {
@@ -304,10 +308,105 @@ ul {
       .hero__iphone-11 {
         height: 600px; } }
   .hero__tv-plus {
-    background-color: #fafafa;
+    background-color: var(--lightbg);
     display: flex;
     flex-direction: column;
     padding: 4rem 2rem; }
     @media (min-width: 1280px) {
       .hero__tv-plus {
         padding-top: 6rem; } }
+
+.collections {
+  display: grid;
+  grid-template-rows: repeat(6, minmax(min-content, 500px)); }
+  .collections .collection {
+    margin-bottom: 1rem; }
+    .collections .collection__iphone-11-pro {
+      background-image: url("../../img/iphone-11-pro/iphone-11-pro-small.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      height: auto;
+      max-width: 100%;
+      padding: 4rem 2rem; }
+      @media (min-width: 734px) {
+        .collections .collection__iphone-11-pro {
+          background-image: url("../../img/iphone-11-pro/iphone-11-pro-medium.jpg"); } }
+    .collections .collection .iphone-11-pro__title {
+      color: var(--darkbg-text);
+      font-size: 3rem;
+      margin-bottom: 1rem; }
+    .collections .collection .iphone-11-pro__subtitle {
+      color: var(--darkbg-text);
+      font-weight: 400;
+      margin-bottom: 1rem; }
+    .collections .collection .iphone-11-pro__price {
+      color: var(--light-gray);
+      font-size: 1.4rem;
+      margin-bottom: 1rem; }
+    .collections .collection .cta-links__item {
+      color: var(--darkbg-blue); }
+    .collections .collection__covid-19 {
+      background-color: var(--covid19-bg);
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .collections .collection .covid-19__img {
+      margin-bottom: 2rem; }
+    .collections .collection .covid-19__title {
+      color: var(--darkbg-text);
+      font-size: 3rem;
+      margin-bottom: 2rem; }
+    .collections .collection .covid-19__cta {
+      display: flex;
+      flex-direction: column; }
+      .collections .collection .covid-19__cta--link {
+        color: var(--darkbg-text);
+        font-size: 1.8rem; }
+        .collections .collection .covid-19__cta--link:not(:last-child) {
+          margin-bottom: 1rem; }
+    .collections .collection__apple-watch {
+      background-color: var(--lightbg);
+      padding: 4rem 2rem; }
+    .collections .collection .apple-watch__watch-logo {
+      margin-bottom: 1rem; }
+    .collections .collection .apple-watch__subtitle {
+      color: var(--lightbg-text);
+      font-weight: 400;
+      margin-bottom: 2rem; }
+    .collections .collection .apple-watch__cta {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 200px; }
+      @media (min-width: 1024px) {
+        .collections .collection .apple-watch__cta {
+          margin-bottom: 4rem; } }
+      .collections .collection .apple-watch__cta--link {
+        color: var(--lightbg-blue); }
+    .collections .collection .apple-watch__img {
+      height: auto;
+      max-width: 100%; }
+    .collections .collection__mothers-day {
+      background-color: var(--lightbg);
+      background-image: url(../../img/mothers-day/small.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      @media (min-width: 734px) {
+        .collections .collection__mothers-day {
+          background-image: url(../../img/mothers-day/medium.jpg);
+          background-size: contain; } }
+      @media (min-width: 1024px) {
+        .collections .collection__mothers-day {
+          background-image: url(../../img/mothers-day/large.jpg); } }
+    .collections .collection .mothers-day__title {
+      color: var(--lightbg-text);
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      padding: 4rem 2rem 0; }
+    .collections .collection .mothers-day__cta {
+      color: var(--lightbg-blue); }
