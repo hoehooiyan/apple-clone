@@ -410,3 +410,30 @@ ul {
       padding: 4rem 2rem 0; }
     .collections .collection .mothers-day__cta {
       color: var(--lightbg-blue); }
+    .collections .collection__apple-arcade {
+      background-image: url("../../img/arcade/small.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 4rem 2rem; }
+      @media (min-width: 734px) {
+        .collections .collection__apple-arcade {
+          background-image: url("../../img/arcade/medium.jpg"); } }
+      @media (min-width: 1024px) {
+        .collections .collection__apple-arcade {
+          background-image: url("../../img/arcade/large.jpg"); } }
+    .collections .collection .apple-arcade__logo {
+      margin-bottom: 1rem; }
+    .collections .collection .apple-arcade__subtitle {
+      color: var(--darkbg-text);
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 1rem; }
+    .collections .collection .apple-arcade__cta {
+      display: flex;
+      flex-direction: column; }
+      .collections .collection .apple-arcade__cta--link {
+        color: var(--darkbg-text);
+        font-weight: 500; }
+        .collections .collection .apple-arcade__cta--link:not(:last-child) {
+          margin-bottom: 1rem; }

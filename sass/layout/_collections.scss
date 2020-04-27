@@ -149,5 +149,48 @@
         color: var(--lightbg-blue);
       }
     }
+
+    &__apple-arcade {
+      background-image: url('../../img/arcade/small.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 4rem 2rem;
+
+      @include media('sm') {
+        background-image: url('../../img/arcade/medium.jpg');
+      }
+
+      @include media('lg') {
+        background-image: url('../../img/arcade/large.jpg');
+      }
+    }
+
+    .apple-arcade {
+      &__logo {
+        margin-bottom: 1rem;
+      }
+
+      &__subtitle {
+        color: var(--darkbg-text);
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+
+      &__cta {
+        display: flex;
+        flex-direction: column;
+
+        &--link {
+          color: var(--darkbg-text);
+          font-weight: 500;
+
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
   }
 }
