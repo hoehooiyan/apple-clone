@@ -143,7 +143,7 @@ ul {
   align-items: center;
   height: 46px;
   margin: 0 auto;
-  max-width: 992px;
+  max-width: 1024px;
   min-height: 40px;
   padding: 0 0 0 2rem; }
 
@@ -192,21 +192,60 @@ ul {
   padding: 4rem 2rem 0 2rem;
   text-align: center;
   margin: 0 auto; }
-  .hero__title {
+  @media (min-width: 1024px) {
+    .hero {
+      padding-top: 6rem; } }
+  @media (min-width: 734px) {
+    .hero__iphone-se {
+      background-image: url("../../img/heroes/iphone-se/mediumtall.jpg");
+      background-position: center 80px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 500px;
+      width: 100%; } }
+  @media (min-width: 1024px) {
+    .hero__iphone-se {
+      background-image: url("../../img/heroes/iphone-se/largetall.jpg");
+      background-position: center 100px;
+      height: 650px; } }
+  @media (min-width: 1280px) {
+    .hero__iphone-se {
+      background-position: center 60px; } }
+  .hero__title--darkbg {
     color: var(--darkbg-text);
     font-size: 3rem;
     margin-bottom: 0.5rem; }
-  .hero__subtitle {
+  @media (min-width: 734px) {
+    .hero__title {
+      font-size: 4rem;
+      margin-bottom: 1rem; } }
+  @media (min-width: 1024px) {
+    .hero__title {
+      font-size: 5rem; } }
+  .hero__subtitle--darkbg {
     color: var(--darkbg-text);
     font-weight: 400;
-    line-height: 25px;
     margin-bottom: 0.5rem; }
-  .hero__price {
+  @media (min-width: 734px) {
+    .hero__subtitle {
+      font-size: 2.2rem;
+      margin-bottom: 1rem; } }
+  @media (min-width: 1024px) {
+    .hero__subtitle {
+      font-size: 2.6rem; } }
+  .hero__price--darkbg {
     color: var(--light-gray);
     margin-bottom: 1.4rem; }
+  @media (min-width: 734px) {
+    .hero__price {
+      font-size: 1.8rem;
+      margin-bottom: 1.8rem; } }
   .hero__img {
     max-width: 100%;
     height: auto; }
+    @media (min-width: 734px) {
+      .hero__img {
+        display: none; } }
   .hero .cta-links {
     display: flex;
     justify-content: space-between;
@@ -214,3 +253,9 @@ ul {
     width: 200px; }
     .hero .cta-links__item {
       color: var(--darkbg-blue); }
+      @media (min-width: 734px) {
+        .hero .cta-links__item {
+          font-size: 1.8rem; } }
+      @media (min-width: 1024px) {
+        .hero .cta-links__item {
+          font-size: 2rem; } }

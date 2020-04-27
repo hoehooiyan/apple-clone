@@ -1,37 +1,87 @@
 .hero {
-  // background-image: url('../../img/heroes/iphone-se/small.jpg');
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
   background-color: #131313;
   padding: 4rem 2rem 0 2rem;
   text-align: center;
-  // width: 100%;
   margin: 0 auto;
 
+  @include media('lg') {
+    padding-top: 6rem;
+  }
+
+  &__iphone-se {
+    @include media('sm') {
+      background-image: url('../../img/heroes/iphone-se/mediumtall.jpg');
+      background-position: center 80px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 500px;
+      width: 100%;
+    }
+
+    @include media('lg') {
+      background-image: url('../../img/heroes/iphone-se/largetall.jpg');
+      background-position: center 100px;
+      height: 650px;
+    }
+
+    @include media('xl') {
+      background-position: center 60px;
+    }
+  }
+
   &__title {
-    color: var(--darkbg-text);
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    &--darkbg {
+      color: var(--darkbg-text);
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    @include media('sm') {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    @include media('lg') {
+      font-size: 5rem;
+    }
   }
 
   &__subtitle {
-    color: var(--darkbg-text);
-    font-weight: 400;
-    line-height: 25px;
-    margin-bottom: 0.5rem;
+    &--darkbg {
+      color: var(--darkbg-text);
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    @include media('sm') {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    @include media('lg') {
+      font-size: 2.6rem;
+    }
   }
 
   &__price {
-    color: var(--light-gray);
-    margin-bottom: 1.4rem;
+    &--darkbg {
+      color: var(--light-gray);
+      margin-bottom: 1.4rem;
+    }
+
+    @include media('sm') {
+      font-size: 1.8rem;
+      margin-bottom: 1.8rem;
+    }
   }
 
   &__img {
-    // display: block;
-    // margin: 0 auto;
     max-width: 100%;
     height: auto;
+
+    @include media('sm') {
+      display: none;
+    }
   }
 
   .cta-links {
@@ -42,6 +92,14 @@
 
     &__item {
       color: var(--darkbg-blue);
+
+      @include media('sm') {
+        font-size: 1.8rem;
+      }
+
+      @include media('lg') {
+        font-size: 2rem;
+      }
     }
   }
 }
