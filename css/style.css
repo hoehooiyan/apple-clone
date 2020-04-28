@@ -322,7 +322,7 @@ ul {
   @media (min-width: 734px) {
     .collections {
       grid-gap: 1rem;
-      grid-template-rows: repeat(3, minmax(min-content, 500px));
+      grid-template-rows: repeat(3, minmax(min-content, 1fr));
       grid-template-columns: repeat(2, minmax(min-content, 1fr));
       justify-content: center;
       padding: 0 1rem; } }
@@ -341,18 +341,31 @@ ul {
       @media (min-width: 734px) {
         .collections .collection__iphone-11-pro {
           background-image: url("../../img/iphone-11-pro/iphone-11-pro-medium.jpg"); } }
+      @media (min-width: 1024px) {
+        .collections .collection__iphone-11-pro {
+          padding: 6rem 2rem; } }
     .collections .collection .iphone-11-pro__title {
       color: var(--darkbg-text);
       font-size: 3rem;
       margin-bottom: 1rem; }
+      @media (min-width: 1024px) {
+        .collections .collection .iphone-11-pro__title {
+          font-size: 3.5rem; } }
     .collections .collection .iphone-11-pro__subtitle {
       color: var(--darkbg-text);
       font-weight: 400;
       margin-bottom: 1rem; }
+      @media (min-width: 1024px) {
+        .collections .collection .iphone-11-pro__subtitle {
+          font-size: 2.5rem; } }
     .collections .collection .iphone-11-pro__price {
       color: var(--light-gray);
       font-size: 1.4rem;
       margin-bottom: 1rem; }
+      @media (min-width: 1024px) {
+        .collections .collection .iphone-11-pro__price {
+          font-size: 1.8rem;
+          margin-bottom: 2rem; } }
     .collections .collection .cta-links__item {
       color: var(--darkbg-blue); }
     .collections .collection__covid-19 {
@@ -367,9 +380,19 @@ ul {
       color: var(--darkbg-text);
       font-size: 3rem;
       margin-bottom: 2rem; }
+      @media (min-width: 1024px) {
+        .collections .collection .covid-19__title {
+          font-size: 4rem; } }
     .collections .collection .covid-19__cta {
       display: flex;
       flex-direction: column; }
+      @media (min-width: 734px) {
+        .collections .collection .covid-19__cta {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: baseline;
+          width: 300px;
+          margin: 0 auto; } }
       .collections .collection .covid-19__cta--link {
         color: var(--darkbg-text);
         font-size: 1.8rem; }
@@ -384,6 +407,9 @@ ul {
       color: var(--lightbg-text);
       font-weight: 400;
       margin-bottom: 2rem; }
+      @media (min-width: 1024px) {
+        .collections .collection .apple-watch__subtitle {
+          font-size: 2.4rem; } }
     .collections .collection .apple-watch__cta {
       display: flex;
       justify-content: space-between;
@@ -394,6 +420,9 @@ ul {
           margin-bottom: 4rem; } }
       .collections .collection .apple-watch__cta--link {
         color: var(--lightbg-blue); }
+        @media (min-width: 1024px) {
+          .collections .collection .apple-watch__cta--link {
+            font-size: 2rem; } }
     .collections .collection .apple-watch__img {
       height: auto;
       max-width: 100%; }
@@ -406,17 +435,24 @@ ul {
       @media (min-width: 734px) {
         .collections .collection__mothers-day {
           background-image: url(../../img/mothers-day/medium.jpg);
-          background-size: contain; } }
+          background-size: cover; } }
       @media (min-width: 1024px) {
         .collections .collection__mothers-day {
-          background-image: url(../../img/mothers-day/large.jpg); } }
+          background-image: url(../../img/mothers-day/large.jpg);
+          background-size: cover; } }
     .collections .collection .mothers-day__title {
       color: var(--lightbg-text);
       font-size: 3rem;
       margin-bottom: 2rem;
       padding: 4rem 2rem 0; }
+      @media (min-width: 1024px) {
+        .collections .collection .mothers-day__title {
+          font-size: 4rem; } }
     .collections .collection .mothers-day__cta {
       color: var(--lightbg-blue); }
+      @media (min-width: 1024px) {
+        .collections .collection .mothers-day__cta {
+          font-size: 2rem; } }
     .collections .collection__apple-arcade {
       background-image: url("../../img/arcade/small.jpg");
       background-position: center;
@@ -428,7 +464,8 @@ ul {
           background-image: url("../../img/arcade/medium.jpg"); } }
       @media (min-width: 1024px) {
         .collections .collection__apple-arcade {
-          background-image: url("../../img/arcade/large.jpg"); } }
+          background-image: url("../../img/arcade/large.jpg");
+          padding: 6rem 2rem; } }
     .collections .collection .apple-arcade__logo {
       margin-bottom: 1rem; }
     .collections .collection .apple-arcade__subtitle {
@@ -436,12 +473,25 @@ ul {
       font-size: 2rem;
       font-weight: 400;
       margin-bottom: 1rem; }
+      @media (min-width: 1024px) {
+        .collections .collection .apple-arcade__subtitle {
+          font-size: 2.4rem; } }
     .collections .collection .apple-arcade__cta {
       display: flex;
       flex-direction: column; }
+      @media (min-width: 1024px) {
+        .collections .collection .apple-arcade__cta {
+          flex-direction: row;
+          align-items: baseline;
+          width: 400px;
+          justify-content: space-between;
+          margin: 0 auto; } }
       .collections .collection .apple-arcade__cta--link {
         color: var(--darkbg-text);
-        font-weight: 500; }
+        font-weight: 400; }
+        @media (min-width: 1024px) {
+          .collections .collection .apple-arcade__cta--link {
+            font-size: 1.8rem; } }
         .collections .collection .apple-arcade__cta--link:not(:last-child) {
           margin-bottom: 1rem; }
     .collections .collection__taa {
@@ -452,9 +502,18 @@ ul {
       background-repeat: no-repeat;
       background-size: cover;
       padding: 4rem 2rem; }
+      @media (min-width: 1024px) {
+        .collections .collection__taa {
+          background-position: bottom center; } }
     .collections .collection .taa__logo {
       margin-bottom: 2rem; }
     .collections .collection .taa__subhead {
       margin-bottom: 1rem; }
+      @media (min-width: 1024px) {
+        .collections .collection .taa__subhead {
+          margin-bottom: 2rem; } }
     .collections .collection .taa__cta {
       color: var(--darkbg-text); }
+      @media (min-width: 1024px) {
+        .collections .collection .taa__cta {
+          font-size: 1.8rem; } }
