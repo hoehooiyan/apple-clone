@@ -1,8 +1,14 @@
 .collections {
   display: grid;
-  // grid-gap: 1rem;
-  // grid-template-columns: repeat(2, minmax(50px, 1fr));
   grid-template-rows: repeat(6, minmax(min-content, 500px));
+
+  @include media('sm') {
+    grid-gap: 1rem;
+    grid-template-rows: repeat(3, minmax(min-content, 500px));
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    justify-content: center;
+    padding: 0 1rem;
+  }
 
   .collection {
     margin-bottom: 1rem;
@@ -190,6 +196,30 @@
             margin-bottom: 1rem;
           }
         }
+      }
+    }
+
+    &__taa {
+      display: flex;
+      flex-direction: column;
+      background-image: url('../../img/taa/img-small.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 4rem 2rem;
+    }
+
+    .taa {
+      &__logo {
+        margin-bottom: 2rem;
+      }
+
+      &__subhead {
+        margin-bottom: 1rem;
+      }
+
+      &__cta {
+        color: var(--darkbg-text);
       }
     }
   }

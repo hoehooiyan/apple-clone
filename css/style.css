@@ -319,6 +319,13 @@ ul {
 .collections {
   display: grid;
   grid-template-rows: repeat(6, minmax(min-content, 500px)); }
+  @media (min-width: 734px) {
+    .collections {
+      grid-gap: 1rem;
+      grid-template-rows: repeat(3, minmax(min-content, 500px));
+      grid-template-columns: repeat(2, minmax(min-content, 1fr));
+      justify-content: center;
+      padding: 0 1rem; } }
   .collections .collection {
     margin-bottom: 1rem; }
     .collections .collection__iphone-11-pro {
@@ -437,3 +444,17 @@ ul {
         font-weight: 500; }
         .collections .collection .apple-arcade__cta--link:not(:last-child) {
           margin-bottom: 1rem; }
+    .collections .collection__taa {
+      display: flex;
+      flex-direction: column;
+      background-image: url("../../img/taa/img-small.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 4rem 2rem; }
+    .collections .collection .taa__logo {
+      margin-bottom: 2rem; }
+    .collections .collection .taa__subhead {
+      margin-bottom: 1rem; }
+    .collections .collection .taa__cta {
+      color: var(--darkbg-text); }
