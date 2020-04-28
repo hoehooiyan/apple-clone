@@ -573,10 +573,8 @@ ul {
     @media (min-width: 768px) {
       .footer__directory-desktop {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(4, 1fr); } }
-    .footer__directory-desktop .shop-and-learn {
-      grid-row: 1 / 5; }
+        grid-template-columns: repeat(5, minmax(min-content, 1fr));
+        grid-column-gap: 2rem; } }
     .footer__directory-desktop--title {
       margin-bottom: 1.4rem; }
     .footer__directory-desktop--list-item {
