@@ -517,3 +517,20 @@ ul {
       @media (min-width: 1024px) {
         .collections .collection .taa__cta {
           font-size: 1.8rem; } }
+
+.footer {
+  background-color: var(--lightbg);
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem 2.2rem; }
+  .footer__footnote::after {
+    content: '';
+    display: block;
+    border-bottom: 0.2px solid var(--light-gray);
+    margin-top: 2rem; }
+  .footer__footnote--text {
+    color: var(--light-gray);
+    font-size: 1.2rem;
+    line-height: 16px; }
+  .footer__footnote--link {
+    color: var(--dark-gray); }
