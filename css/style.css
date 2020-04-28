@@ -521,9 +521,10 @@ ul {
 
 .footer {
   background-color: var(--lightbg);
-  max-width: 1024px;
-  margin: 0 auto;
   padding: 1rem 2.2rem; }
+  .footer__inner {
+    max-width: 1024px;
+    margin: 0 auto; }
   .footer__footnote::after {
     content: '';
     display: block;

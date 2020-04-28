@@ -1,8 +1,11 @@
 .footer {
   background-color: var(--lightbg);
-  max-width: 1024px;
-  margin: 0 auto;
   padding: 1rem 2.2rem;
+
+  &__inner {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 
   &__footnote {
     &::after {
