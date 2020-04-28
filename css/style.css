@@ -583,3 +583,14 @@ ul {
       margin-bottom: 1.4rem; }
       .footer__directory-desktop--list-item a {
         color: var(--dark-gray); }
+  .footer__contact-apple {
+    color: var(--light-gray);
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 567px) {
+      .footer__contact-apple {
+        flex-direction: row; } }
+    .footer__contact-apple a {
+      color: var(--lightbg-blue); }

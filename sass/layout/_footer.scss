@@ -147,4 +147,20 @@
       }
     }
   }
+
+  &__contact-apple {
+    color: var(--light-gray);
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 567px) {
+      flex-direction: row;
+    }
+
+    a {
+      color: var(--lightbg-blue);
+    }
+  }
 }
