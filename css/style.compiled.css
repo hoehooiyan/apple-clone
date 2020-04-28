@@ -607,7 +607,7 @@ ul {
       align-items: flex-start; } }
   @media screen and (min-width: 915px) {
     .footer__bottommost {
-      align-items: baseline; } }
+      align-items: center; } }
   .footer__locale-link {
     display: flex;
     align-items: center; }
